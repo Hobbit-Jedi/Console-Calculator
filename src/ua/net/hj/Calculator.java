@@ -26,7 +26,7 @@ public class Calculator {
 		else
 		{
 			System.out.println("В параметрах программы нужно передать выражение для вычисления.");
-			System.out.println("Регистр символов значения не имеет.");
+			System.out.println("Регистр символов и наличие\\отсутствие пробельных символов - значения не имеет.");
 			System.out.println("------------------------------------");
 			System.out.println("Допустимые лексемы:");
 			System.out.println();
@@ -73,7 +73,10 @@ public class Calculator {
 			System.out.println("\toct: 1000+358 => 2516");
 			System.out.println("\ttri: 1000+358 => 1212022");
 			System.out.println("\t36 : 1000+358 => 11q");
-			System.out.println("\tsqrt((10 + 20)*30) => 30");
+			System.out.println("\tsqrt((10 + 20)*30) => 30.0");
+			System.out.println("\tsqrt((10 + 20)*30) + sqrt(sqrt((10 + 20)*30)/(1+2)+6) => 34.0");
+			System.out.println("\t10 + 3 - (8+4)*((15-6) - 13*sin(8^2)) => 48.52406195869935");
+			System.out.println("\t-3*-5 => 15.0");
 		}
 	}
 	

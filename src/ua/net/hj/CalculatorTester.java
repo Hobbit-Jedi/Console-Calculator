@@ -46,6 +46,7 @@ public class CalculatorTester {
 		doTest("2^3^4", "4096.0");
 		doTest("(2^3)^4", "4096.0");
 		doTest("2^(3^4)", "2417851639229258349412352.0");
+		doTest("-3*-5", "15.0");
 	}
 	
 	public static void doTest(String aInputExpression, String aResult)
