@@ -47,6 +47,7 @@ public class CalculatorTester {
 		doTest("(2^3)^4", "4096.0");
 		doTest("2^(3^4)", "2417851639229258349412352.0");
 		doTest("-3*-5", "15.0");
+		doTest("max((6 - 3)^4, sqrt(64 * 64), 56 + 48 / 0.333)", "200.14414414414415");
 	}
 	
 	public static void doTest(String aInputExpression, String aResult)
